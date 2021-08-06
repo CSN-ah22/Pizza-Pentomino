@@ -4,7 +4,10 @@ import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import javax.servlet.http.HttpSession;
 
+
 import pentomino.form.LoginForm;
+import pentomino.logic.LoginLogic;
+import pentomino.model.UserInfo;
 
 /**
  * 로그인 처리를 위한 액션입니다.<br />
@@ -26,19 +29,19 @@ public class LoginPageAction {
         String password = loginForm.getPassword();
 
         // 아이디와 패스워드가 맞는지 체크
-        /* 로그인 로직 구현후 주석 해제
+       
         LoginLogic loginLogic = new LoginLogic();
         String result;
         if (loginLogic.loginCheck(user, password)) {
             HttpSession session = request.getSession();
             UserInfo userInfoBean = new UserInfo();
             userInfoBean.setUserName(user);
-            session.setAttribute(Constants.USER_INFO_SESSION_KEY, userInfoBean);
+            session.setAttribute("USER_INFO_SESSION_KEY", userInfoBean);
             result = "success";
         } else {
             result = "fail";
         }
-         */
+        
         return "" ;
     }
 }
