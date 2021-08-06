@@ -1,3 +1,4 @@
+<%@page import="pentomino.model.UserInfo"%>
 <%@page import="pentomino.action.LoginPageAction"%>
 <%@ page language="java" contentType="text/html; charset=UTF-8"
     pageEncoding="UTF-8"%>

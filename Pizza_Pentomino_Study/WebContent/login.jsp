@@ -11,7 +11,7 @@
 <body>
     <h1>피자 펜토미노입니다!</h1>
     
-    <form action="loginPage.jsp" Class="login">
+    <form method="post" action="loginPage.jsp" Class="login">
     <table class="login" align="center">
 	    <tr>
 	        <td>아이디</td>
