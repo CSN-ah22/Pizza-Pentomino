@@ -23,11 +23,18 @@ public class LoginPageAction {
             HttpServletRequest request, HttpServletResponse response)
             throws Exception {
 
+    	String id = request.getParameter("user");
+    	String pwd = request.getParameter("password");
+    	LoginForm loginForm = new LoginForm();
+    	loginForm.setUser(id);
+    	loginForm.setPassword(pwd);
         // 폼에서 파라미터를 꺼낸다
-        LoginForm loginForm = new LoginForm();
+        
         String user = loginForm.getUser();
         String password = loginForm.getPassword();
-
+        
+        System.out.println("LoginPageAction의 user: "+user);
+        System.out.println("LoginPageAction의 password: "+password);
         // 아이디와 패스워드가 맞는지 체크
        
         LoginLogic loginLogic = new LoginLogic();
@@ -42,6 +49,6 @@ public class LoginPageAction {
             result = "fail";
         }
         
-        return "" ;
+        return result ;
     }
 }
