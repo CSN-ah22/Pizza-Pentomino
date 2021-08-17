@@ -7,5 +7,7 @@
 - LoginForm.java - 로그인 화면의 정보를 보관 및 유지하기 위한 액션 폼 빈입니다
 - LoginLogic.java - 로그인 유효성 검사를 위한 비즈니스 로직입니다 비밀번호가 webtext인지 확인합니다
 - UserInfo.java - 로그인 중인 사용자의 정보를 보존 및 유지하기 위한 클래스입니다 세션으로 바인딩되는 객체입니다
+- `WebContent` 에 프론트 구현(`jsp`)이 있습니다
+- 순서 - `login.jsp - loginPage.jsp - LoginPageAction.java - itemList.jsp or loginFailed.jsp`
 ---
 - DB는 로그인이 아닌 상품 목록 저장및불러오기에만 사용됩니다
