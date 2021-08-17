@@ -28,7 +28,7 @@ public class LoginPageAction {
     	LoginForm loginForm = new LoginForm();
     	loginForm.setUser(id);
     	loginForm.setPassword(pwd);
-        // 폼에서 파라미터를 꺼낸다
+        // 폼에 파라미터를 설정한다
         
         String user = loginForm.getUser();
         String password = loginForm.getPassword();
