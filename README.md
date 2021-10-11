@@ -10,4 +10,8 @@
 - `WebContent` 에 프론트 구현(`jsp`)이 있습니다
 - 순서 - `login.jsp - loginPage.jsp - LoginPageAction.java - itemList.jsp or loginFailed.jsp`
 ---
+- 상품 목록 페이지 구성은 이렇습니다
+- itemList.jsp - 상품 목록 화면을 표시하는 view 입니다 세션 유효성을 검사합니다(로그인 상태 확인)
+- ItemListShowAction.java -  DAO를 수행하고 리턴된 값을 받아서 view에 반환합니다
+---
 - DB는 로그인이 아닌 상품 목록 저장및불러오기에만 사용됩니다
